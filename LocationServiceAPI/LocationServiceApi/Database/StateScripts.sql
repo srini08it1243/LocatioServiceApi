@@ -1,0 +1,83 @@
+#drop table states;
+
+create table states
+(
+	id integer primary key,
+	name varchar(30),
+	country_id integer
+);
+
+insert into states (id, name, country_id) values (1, 'Andaman and Nicobar Islands', 101);
+insert into states (id, name, country_id) values (2, 'Andhra Pradesh', 101);
+insert into states (id, name, country_id) values (3, 'Arunachal Pradesh', 101);
+insert into states (id, name, country_id) values (4, 'Assam', 101);
+insert into states (id, name, country_id) values (5, 'Bihar', 101);
+insert into states (id, name, country_id) values (6, 'Chandigarh', 101);
+insert into states (id, name, country_id) values (7, 'Chhattisgarh', 101);
+insert into states (id, name, country_id) values (8, 'Dadra and Nagar Haveli', 101);
+insert into states (id, name, country_id) values (9, 'Daman and Diu', 101);
+insert into states (id, name, country_id) values (10, 'Delhi', 101);
+insert into states (id, name, country_id) values (11, 'Goa', 101);
+insert into states (id, name, country_id) values (12, 'Gujarat', 101);
+insert into states (id, name, country_id) values (13, 'Haryana', 101);
+insert into states (id, name, country_id) values (14, 'Himachal Pradesh', 101);
+insert into states (id, name, country_id) values (15, 'Jammu and Kashmir', 101);
+insert into states (id, name, country_id) values (16, 'Jharkhand', 101);
+insert into states (id, name, country_id) values (17, 'Karnataka', 101);
+insert into states (id, name, country_id) values (18, 'Kenmore', 101);
+insert into states (id, name, country_id) values (19, 'Kerala', 101);
+insert into states (id, name, country_id) values (20, 'Lakshadweep', 101);
+insert into states (id, name, country_id) values (21, 'Madhya Pradesh', 101);
+insert into states (id, name, country_id) values (22, 'Maharashtra', 101);
+insert into states (id, name, country_id) values (23, 'Manipur', 101);
+insert into states (id, name, country_id) values (24, 'Meghalaya', 101);
+insert into states (id, name, country_id) values (25, 'Mizoram', 101);
+insert into states (id, name, country_id) values (26, 'Nagaland', 101);
+insert into states (id, name, country_id) values (27, 'Narora', 101);
+insert into states (id, name, country_id) values (28, 'Natwar', 101);
+insert into states (id, name, country_id) values (29, 'Odisha', 101);
+insert into states (id, name, country_id) values (30, 'Paschim Medinipur', 101);
+insert into states (id, name, country_id) values (31, 'Pondicherry', 101);
+insert into states (id, name, country_id) values (32, 'Punjab', 101);
+insert into states (id, name, country_id) values (33, 'Rajasthan', 101);
+insert into states (id, name, country_id) values (34, 'Sikkim', 101);
+insert into states (id, name, country_id) values (35, 'Tamil Nadu', 101);
+insert into states (id, name, country_id) values (36, 'Telangana', 101);
+insert into states (id, name, country_id) values (37, 'Tripura', 101);
+insert into states (id, name, country_id) values (38, 'Uttar Pradesh', 101);
+insert into states (id, name, country_id) values (39, 'Uttarakhand', 101);
+insert into states (id, name, country_id) values (40, 'Vaishali', 101);
+insert into states (id, name, country_id) values (41, 'West Bengal', 101);
+insert into states (id, name, country_id) values (245, 'Auckland', 13);
+insert into states (id, name, country_id) values (246, 'Australian Capital Territory', 13);
+insert into states (id, name, country_id) values (247, 'Balgowlah', 13);
+insert into states (id, name, country_id) values (248, 'Balmain', 13);
+insert into states (id, name, country_id) values (249, 'Bankstown', 13);
+insert into states (id, name, country_id) values (250, 'Baulkham Hills', 13);
+insert into states (id, name, country_id) values (251, 'Bonnet Bay', 13);
+insert into states (id, name, country_id) values (252, 'Camberwell', 13);
+insert into states (id, name, country_id) values (253, 'Carole Park', 13);
+insert into states (id, name, country_id) values (254, 'Castle Hill', 13);
+insert into states (id, name, country_id) values (255, 'Caulfield', 13);
+insert into states (id, name, country_id) values (256, 'Chatswood', 13);
+insert into states (id, name, country_id) values (257, 'Cheltenham', 13);
+insert into states (id, name, country_id) values (258, 'Cherrybrook', 13);
+insert into states (id, name, country_id) values (259, 'Clayton', 13);
+insert into states (id, name, country_id) values (260, 'Collingwood', 13);
+insert into states (id, name, country_id) values (261, 'Frenchs Forest', 13);
+insert into states (id, name, country_id) values (262, 'Hawthorn', 13);
+insert into states (id, name, country_id) values (263, 'Jannnali', 13);
+insert into states (id, name, country_id) values (264, 'Knoxfield', 13);
+insert into states (id, name, country_id) values (265, 'Melbourne', 13);
+insert into states (id, name, country_id) values (266, 'New South Wales', 13);
+insert into states (id, name, country_id) values (267, 'Northern Territory', 13);
+insert into states (id, name, country_id) values (268, 'Perth', 13);
+insert into states (id, name, country_id) values (269, 'Queensland', 13);
+insert into states (id, name, country_id) values (270, 'South Australia', 13);
+insert into states (id, name, country_id) values (271, 'Tasmania', 13);
+insert into states (id, name, country_id) values (272, 'Templestowe', 13);
+insert into states (id, name, country_id) values (273, 'Victoria', 13);
+insert into states (id, name, country_id) values (274, 'Werribee south', 13);
+insert into states (id, name, country_id) values (275, 'Western Australia', 13);
+insert into states (id, name, country_id) values (276, 'Wheeler', 13);
+Commit;
