@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorldLocationsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="city">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="state_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="shortname" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="phonecode" Type="Int32" />
+    <Property Name="fromtime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="totime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="state">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="country_id" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="WorldLocationsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cities" EntityType="Self.city" />
+    <EntitySet Name="countries" EntityType="Self.country" />
+    <EntitySet Name="states" EntityType="Self.state" />
+  </EntityContainer>
+</Schema>

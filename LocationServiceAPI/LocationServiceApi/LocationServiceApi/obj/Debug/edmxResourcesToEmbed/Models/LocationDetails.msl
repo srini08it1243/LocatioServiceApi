@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WorldLocationsModelStoreContainer" CdmEntityContainer="WorldLocationsEntities">
+    <EntitySetMapping Name="cities">
+      <EntityTypeMapping TypeName="WorldLocationsModel.city">
+        <MappingFragment StoreEntitySet="cities">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="countries">
+      <EntityTypeMapping TypeName="WorldLocationsModel.country">
+        <MappingFragment StoreEntitySet="countries">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="shortname" ColumnName="shortname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phonecode" ColumnName="phonecode" />
+          <ScalarProperty Name="fromtime" ColumnName="fromtime" />
+          <ScalarProperty Name="totime" ColumnName="totime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="states">
+      <EntityTypeMapping TypeName="WorldLocationsModel.state">
+        <MappingFragment StoreEntitySet="states">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="country_id" ColumnName="country_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
